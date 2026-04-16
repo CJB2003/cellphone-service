@@ -60,4 +60,15 @@ public class CellPhone {
     public void setOwner(String owner) {
         this.owner = owner;
     }
+
+    @Override
+    public String toString() {
+        return "CellPhone{" +
+                "serialNumber= " + serialNumber +
+                ", model= '" + model + '\'' +
+                ", carrier= '" + carrier + '\'' +
+                ", phoneNumber= '" + phoneNumber + '\'' +
+                ", owner= '" + owner + '\'' +
+                '}';
+    }
 }

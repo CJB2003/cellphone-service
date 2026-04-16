@@ -41,9 +41,6 @@ public class CellPhoneApplication {
         System.out.println(currentNum);
         System.out.println(ownerName);
 
-
-
-
-
+        System.out.println(myPhone.toString());
     }
 }
