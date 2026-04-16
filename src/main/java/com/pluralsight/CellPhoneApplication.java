@@ -10,9 +10,13 @@ public class CellPhoneApplication {
         CellPhone cellPhone2 = new CellPhone();
 
         //testing display method to see if it works
+        //Update: it works
         display(myPhone);
         display(cellPhone2);
 
+        //the two different phones dial each other
+        myPhone.dial(cellPhone2.getPhoneNumber());
+        cellPhone2.dial(myPhone.getPhoneNumber());
     }
 
     public static void display(CellPhone phone) {
@@ -49,6 +53,6 @@ public class CellPhoneApplication {
         System.out.println(currentPM);
         System.out.println(currentPC);
         System.out.println(currentNum);
-        System.out.println(ownerName);
+        System.out.println(ownerName + "\n");
     }
 }
