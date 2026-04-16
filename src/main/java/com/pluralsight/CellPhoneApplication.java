@@ -5,7 +5,17 @@ public class CellPhoneApplication {
     public static Scanner myScanner = new Scanner(System.in);
     public static void main(String[] args) {
 
+        //Created instances
         CellPhone myPhone = new CellPhone();
+        CellPhone cellPhone2 = new CellPhone();
+
+        //testing display method to see if it works
+        display(myPhone);
+        display(cellPhone2);
+
+    }
+
+    public static void display(CellPhone phone) {
 
         //ask for user input with questions
         System.out.print("What is the serial number? ");
@@ -21,18 +31,18 @@ public class CellPhoneApplication {
         String userName = myScanner.nextLine();
 
         //set data with user input
-        myPhone.setSerialNumber(userSerial);
-        myPhone.setModel(userModel);
-        myPhone.setCarrier(userCarrier);
-        myPhone.setPhoneNumber(userNumber);
-        myPhone.setOwner(userName);
+        phone.setSerialNumber(userSerial);
+        phone.setModel(userModel);
+        phone.setCarrier(userCarrier);
+        phone.setPhoneNumber(userNumber);
+        phone.setOwner(userName);
 
         //store getters in variables
-        int currentSN = myPhone.getSerialNumber();
-        String currentPM = myPhone.getModel();
-        String currentPC = myPhone.getCarrier();
-        String currentNum = myPhone.getPhoneNumber();
-        String ownerName = myPhone.getOwner();
+        int currentSN = phone.getSerialNumber();
+        String currentPM = phone.getModel();
+        String currentPC = phone.getCarrier();
+        String currentNum = phone.getPhoneNumber();
+        String ownerName = phone.getOwner();
 
         //print out string variables with getters stored
         System.out.println(currentSN);
@@ -40,7 +50,5 @@ public class CellPhoneApplication {
         System.out.println(currentPC);
         System.out.println(currentNum);
         System.out.println(ownerName);
-
-        System.out.println(myPhone.toString());
     }
 }
