@@ -10,6 +10,7 @@ public class CellPhoneApplication {
         //Created instances (objects)
         CellPhone myPhone = new CellPhone();
         CellPhone cellPhone2 = new CellPhone();
+        CellPhone cellPhone3 = new CellPhone(54632, "Iphone 15 Pro", "AT&T", "5673981289", "Chris Bunny");
 
         //testing display method to see if it works
         //Update: it works
@@ -56,10 +57,10 @@ public class CellPhoneApplication {
         String ownerName = phone.getOwner();
 
         //print out string variables with getters stored
-        System.out.println(currentSN);
-        System.out.println(currentM);
-        System.out.println(currentC);
-        System.out.println(currentNum);
-        System.out.println(ownerName + "\n");
+        System.out.println("Phone serial number: " + currentSN);
+        System.out.println("Phone model: " + currentM);
+        System.out.println("Phone carrier " + currentC);
+        System.out.println("Phone number: " + currentNum);
+        System.out.println("Owner name: " + ownerName + "\n");
     }
 }
