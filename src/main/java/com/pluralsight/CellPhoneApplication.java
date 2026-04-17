@@ -2,10 +2,12 @@ package com.pluralsight;
 import java.util.*;
 
 public class CellPhoneApplication {
-    public static Scanner myScanner = new Scanner(System.in);
+
+    static Scanner myScanner = new Scanner(System.in);
+
     public static void main(String[] args) {
 
-        //Created instances
+        //Created instances (objects)
         CellPhone myPhone = new CellPhone();
         CellPhone cellPhone2 = new CellPhone();
 
@@ -25,14 +27,19 @@ public class CellPhoneApplication {
         System.out.print("What is the serial number? ");
         int userSerial = myScanner.nextInt();
         myScanner.nextLine();
+
         System.out.print("What model is the phone? ");
         String userModel = myScanner.nextLine();
+
         System.out.print("Who is the carrier? ");
         String userCarrier = myScanner.nextLine();
+
         System.out.print("What is the phone number? ");
         String userNumber = myScanner.nextLine();
+
         System.out.print("Who is the owner of the phone? ");
         String userName = myScanner.nextLine();
+        System.out.print("\n");
 
         //set data with user input
         phone.setSerialNumber(userSerial);
@@ -43,15 +50,15 @@ public class CellPhoneApplication {
 
         //store getters in variables
         int currentSN = phone.getSerialNumber();
-        String currentPM = phone.getModel();
-        String currentPC = phone.getCarrier();
+        String currentM = phone.getModel();
+        String currentC = phone.getCarrier();
         String currentNum = phone.getPhoneNumber();
         String ownerName = phone.getOwner();
 
         //print out string variables with getters stored
         System.out.println(currentSN);
-        System.out.println(currentPM);
-        System.out.println(currentPC);
+        System.out.println(currentM);
+        System.out.println(currentC);
         System.out.println(currentNum);
         System.out.println(ownerName + "\n");
     }

@@ -19,6 +19,10 @@ public class CellPhone {
         this.owner = "";
     }
 
+    //dial method, prints
+    public void dial(String phoneNum) {
+        System.out.println(this.owner + "'s phone is calling " + phoneNum);
+    }
 
     //getters and setters
     public int getSerialNumber() {
@@ -71,8 +75,4 @@ public class CellPhone {
 //                ", owner= '" + owner + '\'' +
 //                '}';
 //    }
-
-    public void dial(String phoneNum) {
-        System.out.println(this.owner + "'s phone is calling " + phoneNum);
-    }
 }
